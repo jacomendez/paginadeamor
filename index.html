@@ -63,21 +63,27 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    /* Estilo del iframe de Spotify */
+    /* Botón de Spotify */
     .spotify-container {
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       max-width: 500px;
       width: 90%;
       margin: 20px auto;
-      padding: 10px;
     }
 
-    .spotify-container iframe {
-      width: 100%;
-      height: 80px;
+    .spotify-button {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: #1DB954;
+      padding: 12px 20px;
       border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .spotify-button:hover {
+      transform: scale(1.05);
     }
 
     /* Corazones flotando */
@@ -134,16 +140,11 @@
     <!-- Aquí escribes tu dedicatoria personalizada 💌 -->
   </div>
 
-  <!-- Contenedor estilizado para Spotify -->
+  <!-- Botón de Spotify seguro para GitHub Pages -->
   <div class="spotify-container">
-    <iframe 
-      src="https://open.spotify.com/embed/playlist/7a7n8Fyt05Qmpdb0ZeYG9o" 
-      width="100%" 
-      height="80" 
-      frameborder="0" 
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-      loading="lazy">
-    </iframe>
+    <a href="https://open.spotify.com/playlist/7a7n8Fyt05Qmpdb0ZeYG9o" target="_blank" class="spotify-button">
+      🎵 Abrir playlist en Spotify
+    </a>
   </div>
 
   <script>
@@ -180,6 +181,7 @@
   </script>
 </body>
 </html>
+
 
 
 
